@@ -2,6 +2,7 @@
     "java.project.sourcePaths": ["src"],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
-        "lib/**/*.jar"
-    ]
+        "libs/**/*.jar"
+    ],
+    "java.debug.settings.onBuildFailureProceed": true
 }

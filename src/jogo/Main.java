@@ -5,7 +5,7 @@ import jplay.Keyboard;
 import jplay.Window;
 
 public class Main {
-    public void main(String[] args) {
+    public static void main(String[] args) {
         
         Window janela = new Window(800, 600);
         GameImage plano = new GameImage("src/recursos/sprites/menu.png");
