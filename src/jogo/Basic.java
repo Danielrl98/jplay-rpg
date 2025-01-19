@@ -1,4 +1,4 @@
-package jogo.data;
+package jogo;
 
 import jplay.Window;
 import java.awt.Color;

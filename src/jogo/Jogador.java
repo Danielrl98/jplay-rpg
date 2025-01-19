@@ -3,7 +3,6 @@ package jogo;
 import java.awt.Point;
 import java.util.Vector;
 
-import jogo.data.Basic;
 import jplay.GameObject;
 import jplay.Keyboard;
 import jplay.Scene;
