@@ -1,4 +1,4 @@
-javac -d bin -cp "libs/*" src/jogo/*.java  
+javac -d bin -cp "libs/*" -sourcepath src src/jogo/*.java  
 
 @REM java -jar cfr.jar libs/jplay.jar --outputdir ./bin/jplay
 

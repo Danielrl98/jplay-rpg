@@ -1,4 +1,4 @@
-package jogo;
+package jogo.mecanic;
 
 import jplay.Keyboard;
 import jplay.Scene;

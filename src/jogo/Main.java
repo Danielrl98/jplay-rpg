@@ -1,5 +1,6 @@
 package jogo;
 
+import jogo.mecanic.Cenario1;
 import jplay.GameImage;
 import jplay.Keyboard;
 import jplay.Window;
