@@ -7,13 +7,14 @@ public class Zumbi extends Ator {
     private double velocidade = 1;
     private int direcao = 3;
     private boolean movendo;
+    private int life = 1000;
 
     public Zumbi(int x, int y){
         super("src/recursos/sprites/zumbi.png", 20);
         this.x  = x;
         this.y = y;
         this.setTotalDuration(2000);
-        this.velocidade = 0.3;
+        this.velocidade = 0.1;
         this.movendo = false;
     }
 
@@ -59,5 +60,19 @@ public class Zumbi extends Ator {
             update();
             this.movendo = false;
         }
+    }
+
+    public void destroy(){
+        this.x = 1000000;
+    }
+
+    public int perderVida(){
+        this.life -= 250;
+
+        if(this.life <= 0){
+            this.destroy();
+        }
+
+        return this.life;
     }
 }

@@ -1,6 +1,6 @@
 package jogo;
 
-import jogo.mecanic.Cenario1;
+import jogo.mecanic.Cenario;
 import jogo.mecanic.Menu;
 import jplay.Keyboard;
 import jplay.Window;
@@ -11,13 +11,15 @@ public class Main {
         Window window = new Window(800, 600);
 
         Keyboard teclado = window.getKeyboard();
+   
+        Cenario cenario = new Cenario();
         
         while(true){
             new Menu().plano.draw();
             window.update();
 
             if(teclado.keyDown(Keyboard.ENTER_KEY)) {
-                new Cenario1(window);
+                cenario.getCenario(1);
             }
         }
     }

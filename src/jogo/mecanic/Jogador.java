@@ -1,7 +1,10 @@
 package jogo.mecanic;
 
+import java.util.ArrayList;
+
 import jogo.data.Basic;
 import jplay.Keyboard;
+import jplay.Scene;
 import jplay.Window;
 
 public class Jogador extends Ator {
@@ -15,6 +18,14 @@ public class Jogador extends Ator {
         this.x = x;
         this.y = y;
         this.setTotalDuration(2000);
+    }
+
+    ControleTiros tiros = new ControleTiros();
+    public void atirar(Window janela, Scene cena, Keyboard teclado, ArrayList<Zumbi> inimigo){
+        if(teclado.keyDown(Keyboard.SPACE_KEY)){
+            tiros.adicionarTiro(x, y, direcao, cena);
+        }
+        tiros.run(inimigo);
     }
 
     public void controle(Window janela, Keyboard teclado){
